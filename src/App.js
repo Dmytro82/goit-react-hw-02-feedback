@@ -1,8 +1,19 @@
+import React from 'react';
+
+// js
+
+import Statistics from './components/statistics/statistics';
+
+// dataJson
+
+import statistics from './data-json/statistics.json';
+
 function App() {
   return (
-    <div>
-      <header>привет мир</header>
-    </div>
+    <>
+      <Statistics title="Upload stats" stats={statistics} />
+      <Statistics stats={statistics} />
+    </>
   );
 }
 
